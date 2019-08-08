@@ -1,0 +1,27 @@
+{
+  "name": "fs-fx-service",
+  "version": "1.0.0",
+  "description": "FX service",
+  "main": "index.js",
+  "keywords": [],
+  "author": "FS Domain",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bunyan": "^1.8.12",
+    "dotenv": "^5.0.1",
+    "koa": "^2.5.0",
+    "koa2-cors": "^2.0.6",
+    "koa-body": "^2.5.0",
+    "koa-router": "^7.3.0",
+    "useragent": "^2.2.1",
+    "uuid": "^3.2.1",
+    "validatorjs": "^3.14.2",
+    "au-helpers": "git+ssh://git@github.com:aucorp/au-helpers.git"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "starteb": "env $(tfconfig dotenv ${APP_ENV}) node index.js"
+  }
+}
